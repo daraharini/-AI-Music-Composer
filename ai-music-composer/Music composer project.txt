@@ -1,0 +1,108 @@
+Here are **ONLY the exact commands** you need, **in the exact order**, and **where to run them** — *nothing extra*.
+
+---
+
+# ✅ **STEP 1 — Open the project folder**
+
+Open **PowerShell** inside your project:
+
+```
+PS C:\Users\Dell\OneDrive\Desktop\ai-music-composer>
+```
+
+If you're not in the folder, run:
+
+```
+cd "C:\Users\Dell\OneDrive\Desktop\ai-music-composer"
+```
+
+---
+
+# ✅ **STEP 2 — Install required libraries**
+
+Run this **in PowerShell**:
+
+```
+pip install fastapi uvicorn
+```
+
+(You already installed them, but this is the command.)
+
+---
+
+# ✅ **STEP 3 — Run the FastAPI server**
+
+Inside the folder where the code file exists (**ai_music_composer.py**):
+
+Run:
+
+```
+uvicorn ai_music_composer:app --reload
+```
+
+---
+
+# ✅ **STEP 4 — Open API UI**
+
+After the server starts, open this link in your browser:
+
+```
+http://127.0.0.1:8000/docs
+```
+
+This is the **FastAPI auto-generated UI**.
+
+---
+
+# ✅ **STEP 5 — Test the API**
+
+Inside the UI:
+
+1. Click on **POST /compose**
+2. Click **Try it out**
+3. Enter:
+
+```
+{
+  "length": 16,
+  "start_note": "C"
+}
+```
+
+4. Click **Execute**
+
+You will see the generated melody.
+
+---
+
+# 📌 **THAT’S IT.
+
+These are the only commands you need:**
+
+### **🔹 Install dependencies**
+
+```
+pip install fastapi uvicorn
+```
+
+### **🔹 Run server**
+
+```
+uvicorn ai_music_composer:app --reload
+```
+
+### **🔹 Open API UI**
+
+```
+http://127.0.0.1:8000/docs
+```
+
+---
+
+If you want, I can also give you:
+
+✅ A project README
+✅ A GitHub-ready description
+✅ How to present this project in your resume
+
+Just tell me!
